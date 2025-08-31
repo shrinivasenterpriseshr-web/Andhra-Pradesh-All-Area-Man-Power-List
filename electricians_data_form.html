@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANDHRA PRADESH ELECTRICAL WORKERS REGISTRATOIN FORM</title>
+  <style>
+
+    
+    body { font-family: Arial, sans-serif; background:#f8f9fa; padding:20px; 
+    background-image: url('https://images.unsplash.com/photo-1728808668131-76d40d112271?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: 100%;}
+    form { max-width:600px; margin:auto; background:#fff; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+    label { display:block; margin-top:10px; font-weight:bold; }
+    input, select { width:100%; padding:8px; margin-top:5px; border:1px solid #ccc; border-radius:5px; }
+    button { margin-top:20px; padding:10px; width:100%; background:#007bff; color:white; border:none; border-radius:5px; font-size:16px; cursor:pointer; }
+    button:hover { background:#0056b3; }
+  </style>
+  <script>
+
+
+    const data = {
+      Vijayawada: {
+        divisions: ["AMARAVATHI (1)","GUNTUR-TOWN 2 (2)","BAPATLA (4)","GUNTUR-TOWN 1 (1)","MACHERLA (5)","NARASARAOPET (3)","TENALI (2)","ADDANKI (5)","CHIRALA (2)","DARSI (6)","KANDUKUR (4)","KANIGIRI (7)","MARKAPURAM (3)","ONGOLE (1)","GUDIVADA (3)","GUNADALA (2)","MACHILIPATNAM (4)","NUZVIDU (6)","VIJAYAWADA RURAL (5)","VIJAYAWADA TOWN (1)","VUYYURU (7)"],
+        subdivisions: ["Mangalagiri","GUNTUR-RURAL 2","CHILAKALURI PET","GUNTUR RURAL 1","BAPATLA","CHERUKUPALLI","PONNUR","GUNTUR-TOWN1","GUNTUR-TOWN2","GUNTUR-TOWN3","GUNTUR-TOWN4(AUTO NAGAR)","MACHERLA","DACHEPALLI","GURAZALA","PIDUGURALLA","NARASARAOPET","NARASARAOPET-RURAL","SATTENAPALLI","VINUKONDA","REPALLE","TENALI RURAL 1","TENALI RURAL 2","TENALI TOWN","ADDANKI","MARTUR","CHIRALA","PARCHOOR","VETAPALEM","DARSI","CHIMAKURTHY","PODILI","KANDUKUR","KANDUKUR RURALS","SINGARAYAKONDA","KANIGIRI","KANIGIRI RURALS","MARKAPUR","Y.PALEM","GIDDALUR","CUMBUM","ONGOLERURAL I","ONGOLERURAL II","ONGOLETOWN","GUDIVADA RURALS","GUDIVADA TOWN","HANUMAN JUNCTION","KAIKALURU","GUNADALA","KANURU","PATAMATA","MACHILIPATNAM","MTM_RURAL","PAMARRU","PEDANA","NUZVIDU RURAL","NUZVIDU TOWN","TIRUVURU","VISSANNAPET","IBRAHIMPATNAM","MYLAVARAM","CHILLAKALLU","NANDIGAMA","D1OLD TOWN","DISTRIBUTION II","DISTRIBUTION IV","VIJAYAWADA C AND O D3","AVANIGADDA","CHALLAPALLI","VUYYURU"]
+      },
+      Visakhapatnam: {
+        divisions: ["BHIMAVARAM (5)","ELURU (1)","JANGAREDDYGUDEM (6)","NARSAPURAM (2)","NIDADAVOLE (4)","TADEPALLIGUDEM (3)","AMALAPURAM (1)","JAGGAMPETA (4)","KAKINADA (2)","PEDDAPURAM (7)","RAJAMAHENDRAVARAM RURAL (5)","RAJAMAHENDRAVARAM TOWN (3)","RAMACHANDRAPURAM (6)","RAMPACHODAVARAM (8)","PALAKONDA (4)","PALASA (3)","SRIKAKULAM (1)","TEKKALI (2)","ANAKAPALLE (5)","KASIMKOTA (6)","NARSIPATNAM (4)","PADERU (7)","VISAKHAPATNAM ZONE-1 (2)","VISAKHAPATNAM ZONE-2 (3)","VISAKHAPATNAM ZONE-3 (1)","BOBBILI (3)","PARVATHIPURAM (4)","VIZIANAGARAM RURAL (1)","VIZIANAGARAM TOWN (2)"],
+        subdivisions: ["AKIVEEDU","BHIMAVARAM","PEDAVEGI","ELURU RURAL","ELURU TOWN","BHIMADOLU","CHEBROLU","CHINTALAPUDI","JANGAREDDYGUDEM","JEELUGUMILLI","KAMAVARAPUKOTA","KOYYALAGUDEM","NARSAPURAM","PALAKOL RURAL","PALAKOL TOWN","PENUGONDA","GOPALAPURAM","KOVVURU","NALLAJERLA","NIDADAVOLE","TADEPALLIGUDEM","TADEPALLIGUDEM-RURAL","TANUKU","AMALAPURAM","KOTHAPETA","MUMMIDIVARAM","RAZOLE","JAGGAMPETA","PRATHIPADU","TUNI","KAKINADA RURAL","KAKINADA TOWN-1","KAKINADA TOWN-2","PITHAPURAM","SAMALKOTA","ANAPARTHY","KORUKONDA","RAJAMAHENDRAVARAM RURAL","RAJAMAHENDRAVARAM TOWN-1","RAJAMAHENDRAVARAM TOWN-2","MANDAPETA","RCPURAM","CHINTOOR","RAMPACHODAVARAM","RAMPACHODAVARAM RURAL","PALAKONDA","SEETHAMPETA","PALASA","SOMPETA","AMADALAVALASA","SRIKAKULAM RURAL","SRIKAKULAM TOWN","KOTABOMMALI","NARASANNAPETA","PATHAPATNAM","TEKKALI","ANAKAPALLE","ATCHUTHAPURAM","ELAMANCHILI","PAYAKARAO PETA","AGANAMPUDI","KASIMKOTA","LANKELAPALEM","SABBAVARAM","CHODAVARAM","NARSIPATNAM RURAL","NARSIPATNAM TOWN","WADDADI","ARUKU","CHINTAPALLI","PADERU","DISTRIBUTION VSP","DONDAPARTHY","SEETHAMMADHARA","WALTAIR","AUTONAGAR","GAJUWAKA","KANCHARAPALEM","MALKAPURAM","ANANDAPURAM","BHEEMILI","GOPALAPATNAM","MADHURAWADA","PENDURTHI","BOBBILI RURAL","BOBBILI TOWN","GAJAPATHINAGARAM","CHIPURUPALLI","PARVATHIPURAM","PARVATHIPURAM ITDA","SALURU","BHOGAPURAM","RAJAM","S.KOTA","VIZIANAGARAM TOWN-1","VIZIANAGARAM TOWN-2"]
+      },
+      Tirupati: {
+        divisions: ["ANANTHAPUR (4)","ANANTHAPUR RURAL (6)","GOOTY (5)","HINDUPUR (3)","KADIRI (2)","KALYANDURG (1)","KADAPA (2)","MYDUKUR (3)","PRODDATUR (1)","PULIVENDULA (5)","RAJAMPET (6)","RAYACHOTY (4)","ADONI (1)","DHONE (4)","KURNOOL (2)","KURNOOL RURAL (5)","NANDYAL (3)","ATMAKURU (6)","GUDUR (5)","KAVALI (1)","NAIDUPETA (3)","NELLORE RURALS (4)","NELLORE TOWN (2)","CHITTOOR RURALS (7)","CHITTOOR TOWN (6)","MADANAPALE (4)","PILERU (8)","PUNGANUR (5)","PUTTUR (1)","TIRUPATI RURALS (3)","TIRUPATI TOWN (2)"],
+        subdivisions: ["ANANTAPUR-II","ANANTHAPUR-I","ANANTHAPUR(E)","ANANTHAPUR(W)","C.K.PALLI","DHARMAVARAM","GOOTY","GUNTAKAL","TADIPATRI","TADIPATRI-CCO","HINDUPUR","HINDUPUR RURALS","MADAKASIRA","PENUKONDA","KADIRI TOWN","KADIRIEAST","KADIRIWEST(R)","PUTTAPARTHY","KALYANDURG HQ","KALYANDURG RURALS","RAYADURG","URAVAKONDA","KADAPA OCC1","KADAPA OCC2","KADAPA OPERATION 1","KADAPA OPERATION 2","BADVEL","MYDUKUR","PORUMAMILLA OCC","JAMMALAMADUGU","PRODDATUR","PRODDATUR RURALS","YERRAGUNTLA","PULIVENDULA","PULIVENDULA(RURALS)","VEMPALLI","KODUR","RAJAMPET","VONTIMITTA","LAKKIREDDY PALLI","RAYACHOTY","RAYACHOTY RURALS","ADONI","ALLUR","MANTRALAYAM","PATTIKONDA","YEMMIGANUR","BANGANAPALLI","BETHAMCHERLA","DHONE","KURNOOL","KURNOOL OPERATION","KURNOOL-II","ATMAKURU","GUDUR","NANDIKOTKUR","ALLAGADDA","KOILKUNTLA","NANDYAL","NANDYAL-CCO","ATMAKURU","UDAYAGIRI","GUDUR","GUDUR RURALS","KOTA","BUCHIREDDY PALEM","KALIGIRI","KAVALI","KOVUR","N.R.PALEM","NAIDUPETA","SULLURPETA","VENKATAGIRI C AND O","INDUKURPETA C AND O","NELLORE RURALS","PODALAKUR C AND O","ANDHRA KESARI NAGAR","RAJENDRA NAGAR","RAMMURTHY NAGAR","CHITTOOR RURAL-I","PAIPALLE CCO","CHITTOOR CCO","CHITTOOR OPERATION","CHITTOOR RURAL-III","MADANAPALLI OPERATION","MULAKALACHERVU","RURAL-MADANAPALLI","KALIKIRI","PILER CCO","PILER RURALS","PALAMANER","PUNGANUR CCO","SODUM","KARVETINAGAR CCO","NAGALAPURAM OPERATION","NAGARI","PUTTUR OPERATION","CHANDRAGIRI","PAKALA","SRIKALAHASTI OPERATION","SRIKALAHASTI RURAL","RENIGUNTA","TIRUPATI CCO","TIRUPATI OPERATION1","TIRUPATI OPERATION2"]
+      }
+    };
+
+    function updateDivisions() {
+      const city = document.getElementById("city").value;
+      const divisionSelect = document.getElementById("division");
+      const subdivisionSelect = document.getElementById("subdivision");
+      divisionSelect.innerHTML = '<option value="">-- Select Division --</option>';
+      subdivisionSelect.innerHTML = '<option value="">-- Select Subdivision --</option>';
+
+      if(data[city]) {
+        data[city].divisions.forEach(div => {
+          const option = document.createElement("option");
+          option.value = div;
+          option.textContent = div;
+          divisionSelect.appendChild(option);
+        });
+
+        data[city].subdivisions.forEach(sub => {
+          const option = document.createElement("option");
+          option.value = sub;
+          option.textContent = sub;
+          subdivisionSelect.appendChild(option);
+        });
+      }
+    }
+    
+
+  </script>
+</head>
+<body>
+
+  
+  <form action="" method="POST" enctype="multipart/form-data" name="submit-to-google-sheet">
+    <h2 style="text-align:center;">ANDHRA PRADESH ELECTRICAL WORKERS REGISTRATOIN FORM</h2>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="dob">Date Of Birth</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="Qualification">Qualification</label>
+    <select id="qualification" name="qualification" required>
+      <option value="">-- Select Qualification --</option>
+      <option value="WireMan">WireMan</option>
+      <option value="Electrican">Electrican</option>
+      <option value="ITI">ITI</option>
+      <option value="Diploma">Diploma</option>
+      <option value="Experience">Experience</option>
+    </select>
+
+
+    <label for="email">Email ID</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mobile">Mobile Number</label>
+    <input type="text" id="mobile" name="mobile" required>
+
+    <label for="address">Full Address</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="pincode">PinCode</label>
+    <input type="text" id="pincode" name="pincode" required>
+
+    <label for="city">City</label>
+    <select id="city" name="city" required onchange="updateDivisions()">
+      <option value="">-- Select City --</option>
+      <option value="Vijayawada">Vijayawada</option>
+      <option value="Visakhapatnam">Visakhapatnam</option>
+      <option value="Tirupati">Tirupati</option>
+    </select>
+
+    <label for="division">Division</label>
+    <select id="division" name="division" required>
+      <option value="">-- Select Division --</option>
+    </select>
+
+    <label for="subdivision">Subdivision</label>
+    <select id="subdivision" name="subdivision" required>
+      <option value="">-- Select Subdivision --</option>
+    </select>
+
+    <label for="aadhar_front">Aadhaar Number</label>
+    <input type="text" id="aadhar_front" name="aadhar_number" required>
+
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <Script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyy-9SFoNBIOHK2g-9p2DLq-u7BX3bNR5voLMigKko-WRNtOw49pKJGrlia90upHiAH/exec'
+      const form = document.forms['submit-to-google-sheet'] // form name
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => alert("Your data has been successfully submitted."))
+          setTimeout(function() {
+            form.reset()
+          })
+          .catch(error => alert("Your data has not been submitted."))
+
+          
+      })
+  </Script>
+</body>
+</html>
